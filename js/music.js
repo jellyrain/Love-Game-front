@@ -8,23 +8,45 @@ var music_totalProgress = document.getElementById("music_totalProgress");
 var music_currentProgress = document.getElementById("music_currentProgress");
 var music_volume_totalProgress = document.getElementById("volume_totalProgress");
 var music_volume_currentProgress = document.getElementById("volume_currentProgress");
-var music_json;
+var music_json = [
+    {
+            "music" : "maplelove.",
+            "name" : "Studio 'Syrup Comfiture'",
+            "music_src" : "music/Studio ＂Syrup Comfiture＂ - maplelove.flac",
+            "music_img" : "image/maplelove..jpg"
+    },
+    {
+            "music" : "Conclusion",
+            "name" : "PHOENIX Project",
+            "music_src" : "music/PHOENIX Project - Conclusion.mp3",
+            "music_img" : "image/Conclusion.jpg"
+    },
+    {
+            "music" : "nostalgia",
+            "name" : "流派未階堂",
+            "music_src" : "music/流派未階堂 - nostalgia.flac",
+            "music_img" : "image/nostalgia.jpg"
+    },
+    {
+            "music" : "Leaving for...",
+            "name" : "MisteryCircle",
+            "music_src" : "music/MisteryCircle - Leaving for.mp3",
+            "music_img" : "image/Leaving_for....jpg"
+    },
+    {
+            "music" : "Lonely Rabbit",
+            "name" : "築山さえ",
+            "music_src" : "music/築山さえ - Lonely Rabbit.flac",
+            "music_img" : "image/Lonely_Rabbit.jpg"
+    }
+];
 var music_i = 0;
 var music_max;
 
 window.onload = function(){
-    var url = "music.json";
-    var request = new XMLHttpRequest();
-    request.open("post", url);
-    request.send(null);
-    request.onload = function(){
-        if(request.status == 200){
-            music_json = JSON.parse(request.responseText);
-        }
         music_max = music_json.length;
         loading(music_i);
         music.play();
-    }
 }
 
 setInterval(function(){

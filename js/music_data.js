@@ -51,7 +51,7 @@ var data_music = [
                 "music" : "NECRO EFFECT",
                 "name" : "坂上なち",
                 "music_src" : "music/坂上なち - NECRO EFFECT.flac",
-                "music_img" : "image/NECRO EFFECT.jpg"
+                "music_img" : "image/NECRO_EFFECT.jpg"
         }
 ]
 

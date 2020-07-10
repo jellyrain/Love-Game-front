@@ -13,9 +13,9 @@ var music_i = 0;
 var music_max;
 
 window.onload = function(){
-    var url = "./js/music.json";
+    var url = "music.json";
     var request = new XMLHttpRequest();
-    request.open("get", url);
+    request.open("post", url);
     request.send(null);
     request.onload = function(){
         if(request.status == 200){

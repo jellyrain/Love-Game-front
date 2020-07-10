@@ -16,6 +16,7 @@ window.onload = function(){
     var url = "js/music.json";
     var request = new XMLHttpRequest();
     request.open("get", url);
+    request.send();
     request.onload = function(){
         if(request.status == 200){
             music_json = JSON.parse(request.responseText);

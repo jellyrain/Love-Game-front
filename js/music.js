@@ -13,18 +13,18 @@ var music_i = 0;
 var music_max;
 
 window.onload = function(){
-    $.ajax({
-        type: "get",
-        url: "../js/music.json",
-        data: "data",
-        dataType: "json",
-        success: function (response) {
-            music_json = response;
-            music_max = music_json.length;
-            loading(music_i);
-            music.play();
+    var url = "../js/music.json";
+    var request = new XMLHttpRequest();
+    request.open("get", url);
+    request.send(null);
+    request.onload = function(){
+        if(request.status == 200){
+            music_json = JSON.parse(request.responseText);
         }
-    });
+        music_max = music_json.length;
+        loading(music_i);
+        music.play();
+    }
 }
 
 setInterval(function(){

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#video_main{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255, 0.6);
+    position: relative;
+    display: flex;
+}
+.top i{
+    margin: 20px 15px 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.music_box{
+    width: 290px;
+    height: 50px;
+    background-color: white;
+    margin: 3px 0 0 15.5%;
+    border: 2px solid rgba(8, 8, 8, 0.4);
+    border-radius: 5px;
+    display: flex;
+    margin-right: 250px;
+}
+.music_img{
+    width: 70px;
+    margin-left:0px;
+    padding: 0;
+}
+.music_text{
+    margin-top: 2px;
+    margin-left: 10px;
+    text-align: center;
+}
+.music_text p{
+    padding-top: 2px;
+    font-size: 8px;
+}
+.music_name{
+    font-size: 8px;
+}
+.music_user{
+    font-size: 6px;
+}
+.music_totalProgress{
+    width: 200px;
+    height: 3px;
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.music_totalProgress div{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(0, 0, 255, 0.7);
+}
+.music_volume{
+    width: 100px;
+    height: 3px;
+    margin-top: 27.5px;
+    border: 1px solid rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.music_volume div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(136, 135, 135, 0.4);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Love Game" content="width=device-width, initial-scale=1.0">
+    <title>Love Game</title>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/waifu.css">  
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+    <video id="video_main" autoplay loop muted oncontextmenu="return false">
+        <source src="http://1302618473.vod2.myqcloud.com/2ba88985vodcq1302618473/b405899b5285890805083997853/Mb8O7M2Gao8A.mp4" type="video/mp4">
+    </video>
+
+    <audio src="" id="lovegame_music"></audio>
+
+    <div class="top">
+        <i class="fa fa-backward" id="backward" style="margin-left: 20%;" onclick="backward()"></i>
+        <i class="fa fa-pause" id="play" onclick="play()"></i>
+        <i class="fa fa-forward" id="forward" onclick="forward()"></i>
+        <div class="music_box">
+            <div class="music_img" id="music_img"></div>
+            <div class="music_text">
+                <p id="music_name"></p>
+                <p id="music_user"></p>
+                <div class="music_totalProgress" id="music_totalProgress" onclick="totalProgress()">
+                    <div id="music_currentProgress"></div>
+                </div>
+            </div>
+        </div>
+        <i class="fa fa-volume-up" id="volume" onclick="volume()"></i>
+        <div class="music_volume" id="volume_totalProgress" onclick="volumetotalProgress()">
+            <div id="volume_currentProgress"></div>
+        </div>
+    </div>
+    <div class="main"></div>
+    <div class="bottom"></div>
+
+    <div class="waifu">
+        <div class="waifu-tips"></div>
+        <canvas id="live2d" class="live2d"></canvas>
+        <div class="waifu-tool">
+            <span class="fui-user"></span>
+        </div>
+    </div>
+    <script src="js/waifu-tips.js"></script>
+    <script src="js/live2d.js"></script>
+    <script type="text/javascript">
+        initModel("js/waifu-tips.json")
+    </script>
+    <script src="https://jellyrain.github.io/Love-Game/js/music.json"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>

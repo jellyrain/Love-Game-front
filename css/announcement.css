@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    position: 0;
+}
+.announcement{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.announcement video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+h1{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 50px;
+    color: rgb(0, 0, 0, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    user-select:none; 
+}
+.box{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 3px solid rgb(0, 0, 0, 0.7);
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+}
+.announcement{
+    margin: 50px;
+    
+}
+.announcement ul{
+    margin: 40px;
+}

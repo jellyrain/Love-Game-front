@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    position: 0;
+}
+.index{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.index video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+h1{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 50px;
+    color: rgb(0, 0, 0, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    user-select:none; 
+}
+.box{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 3px solid rgb(0, 0, 0, 0.7);
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+}
+.box a{
+    width: 100px;
+    height: 450px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 50px;
+    margin: 25px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+.box samp{
+    position: absolute;
+    left: 15px;
+    bottom: 15%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+    transition: .7s linear;
+}
+.box1{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/1.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    top: 110%;
+    transform: translatey(-120%);
+    transition: 2s;
+}
+.box2{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/2.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    bottom: 110%;
+    transform: translatey(120%);
+    transition: 2s;
+}
+.box3{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/3.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    top: 110%;
+    transform: translatey(-120%);
+    transition: 2s;
+}
+.box4{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/4.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    bottom: 110%;
+    transform: translatey(120%);
+    transition: 2s;
+}
+.box5{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/5.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    top: 110%;
+    transform: translatey(-120%);
+    transition: 2s;
+}
+.box6{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/6.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    bottom: 110%;
+    transform: translatey(120%);
+    transition: 2s;
+}
+.box7{
+    background: url(https://jellyrain.gitee.io/love-game-back/image/7.png);
+    background-size: 115%;
+    border: 3px solid #C3D3E7;
+    top: 110%;
+    transform: translatey(-120%);
+    transition: 2s;
+}
+.box1:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box2:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box3:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box4:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box5:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box6:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box7:hover{
+    background-size: 150%;
+    transition: background-size .7s linear;
+}
+.box1:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box2:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box3:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box4:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box5:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box6:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}
+.box7:hover samp{
+    opacity: 1;
+    width: 85px;
+    left: 2%;
+    bottom: 10%;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+}

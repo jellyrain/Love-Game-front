@@ -1,0 +1,411 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+#video_main{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+.top{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: relative;
+    display: flex;
+}
+.top i{
+    margin: 20px 15px 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.music_box{
+    width: 290px;
+    height: 50px;
+    background-color: white;
+    margin: 3px 0 0 15.5%;
+    border: 2px solid rgba(8, 8, 8, 0.6);
+    border-radius: 5px;
+    display: flex;
+    margin-right: 250px;
+}
+.music_img{
+    width: 70px;
+    border-radius: 3px 0 0 3px;
+    padding: 0;
+}
+.music_text{
+    margin-top: 2px;
+    margin-left: 10px;
+    text-align: center;
+}
+.music_text p{
+    padding-top: 2px;
+    font-size: 8px;
+}
+.music_name{
+    font-size: 8px;
+}
+.music_user{
+    font-size: 6px;
+}
+.music_totalProgress{
+    width: 200px;
+    height: 3px;
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.music_totalProgress div{
+    width: 0%;
+    height: 100%;
+    background-color: rgb(0, 0, 255, 0.6);
+}
+.music_volume{
+    width: 100px;
+    height: 3px;
+    margin-top: 27.5px;
+    border: 1px solid rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.music_volume div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(136, 135, 135, 0.4);
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color:rgb(136, 135, 135, 0.7);
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
+.game_box{
+    width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    padding: 40px;
+}
+.left{
+    width: 700px;
+    margin-right: 100px;
+}
+.left_box1{
+    width: 100%;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+.left_box2{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    margin-left: 7px;
+    background-color: rgb(255, 255, 255, 0.6);
+    padding: 30px 0 30px 0;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0, 0.6);
+}
+.left_box2_1{
+    width: 500px;
+    height: 400px;
+    margin: 10px auto;
+    background-color: rgb(255, 255, 255, 0.3);
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.left_box2 p{
+    font-size: 7px;
+    margin-top: 5px;
+}
+.left_box2_1_img{
+    width: 90%;
+    height: 90%;
+    margin: 4.2% auto;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.left_box2_1_img img{
+    width: 100%;
+    height: 100%;
+}
+.left_box2_1_img img:hover{
+    transform: scale(1.5, 1.5);
+    transition: 0.7s;
+}
+.left_123{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left_123 label{
+    margin: 10px;
+    width: 30px;
+    height: 25px;
+    color: rgba(50, 47, 235);
+    border: 2px solid rgba(50, 47, 235, 0.6);
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.left_123 label:hover{
+    color: white;
+    background-color: rgba(50, 47, 235, 0.6);
+}
+.right{
+    width: 320px;
+}
+.right_box1{
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: 1px solid rgb(255, 255, 255, 0.6);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.right_box1 input{
+    width: 250px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid rgb(247, 122, 6);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 6px;
+    color: white;
+}
+.right_box1 i{
+    width: 40px;
+    height: 26px;
+    padding-top: 8px;
+    background-color: rgb(226, 58, 58);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.right_box1 i:hover{
+    opacity: 0.8;
+}
+.login{
+    position: relative;
+}
+.login_top{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 30px;
+    margin-top: 40px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    border-radius: 5px 5px 0 0;
+}
+.login_bottom{
+    width: 88.5%;
+    height: 120px;
+    margin-left: 0.5%;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 0 0 5px 5px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.login_bottom input{
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    padding-left: 5px;
+    border-radius: 5px;
+}
+.login_login{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 8%;
+    left: 10%;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.login_login::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    top: 99%;
+    right: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_login::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    top: -10%;
+    left: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_login:hover::after{
+    transform: translateX(-1050%);
+}
+.login_login:hover::before{
+    transform: translateX(1050%);
+}
+.login_sign{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 8%;
+    left: 55%;
+    border: 2px solid rgb(0, 0, 0, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+.login_sign::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    top: 99%;
+    right: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_sign::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    top: -10%;
+    left: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_sign:hover::after{
+    transform: translateX(-1050%);
+}
+.login_sign:hover::before{
+    transform: translateX(1050%);
+}
+.announcement{
+    position: relative;
+}
+.announcement_top{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 30px;
+    margin-top: 40px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    border-radius: 5px 5px 0 0;
+}
+.announcement_bottom{
+    width: 95%;
+    height: 30px;
+    margin-left: 0.5%;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 0 0 5px 5px;
+    padding-top: 12px;
+    padding-left: 10px;
+    font-size: 10px;
+}
+.classification_top{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 30px;
+    margin-top: 40px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    border-radius: 5px 5px 0 0;
+}
+.classification_bottom{
+    width: 97%;
+    height: 60px;
+    margin-left: 0.5%;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 0 0 5px 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 10px;
+    display: flex;
+}
+.classification_bottom p{
+    width: 50px;
+    height: 20px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.classification_bottom p:hover{
+    opacity: 0.6;
+}
+.bottom{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.game{
+    position: fixed;
+    top: 10%;
+    left: 100%;
+    width: 1500px;
+    height: 800px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.9);
+    z-index: 999;
+    transition: 3s;
+}
+.game_go{
+    transform: translateX(-115%);
+}
+.game i {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: rgb(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.game iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}

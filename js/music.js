@@ -11,6 +11,7 @@ var music_volume_currentProgress = document.getElementById("volume_currentProgre
 var music_json;
 var music_i = 0;
 var music_max;
+var music_src = "https://jellyrain.gitee.io/love-game-music/";
 
 window.onload = function(){
         music_json = music_data();
@@ -27,11 +28,11 @@ setInterval(function(){
 music.addEventListener("ended", forward);
 
 function loading(i){
-    music_img.style.backgroundImage = "url(" + "https://jellyrain.gitee.io/love-game-back/" + music_json[i].music_img + ")";
+    music_img.style.backgroundImage = "url(" + music_src + music_json[i].music_img + ")";
     music_img.style.backgroundSize = "100%";
     music_name.innerText = music_json[i].music;
     music_user.innerText = music_json[i].name;
-    music.src = "https://jellyrain.gitee.io/love-game-back/" + music_json[i].music_src;
+    music.src = music_src + music_json[i].music_src;
 }
 
 function play(){

@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    position: 0;
+}
+.support{
+    width: 97%;
+    height: 100%;
+    position: relative;
+}
+.support video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+h1{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 50px;
+    color: rgb(0, 0, 0, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    user-select:none; 
+}
+.box{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 3px solid rgb(0, 0, 0, 0.7);
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+}
+.support_box{
+    display: flex;
+    align-items: center;
+}
+.support_box label{
+    width: 3px;
+    height: 90%;
+    background-color: rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+.webmaster{
+    margin: 40px 50px 0 30px;
+    width: 300px;
+    text-align: center;
+    font-size: 40px;
+}
+.webmaster img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.Qr_code{
+    display: flex;
+    margin-left: -30px;
+}
+.Qr_code img{
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+.wx{
+    width: 200px;
+    margin: 90px;
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+}
+.zfb{
+    width: 200px;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 90px;
+    font-family: monospace;
+}

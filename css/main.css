@@ -19,7 +19,7 @@ body{
 .top{
     width: 100%;
     height: 60px;
-    background-color: rgb(255, 255, 255, 0.6);
+    background-color: rgb(255, 255, 255, 0.4);
     position: relative;
     display: flex;
 }
@@ -33,14 +33,14 @@ body{
     height: 50px;
     background-color: white;
     margin: 3px 0 0 15.5%;
-    border: 2px solid rgba(8, 8, 8, 0.4);
+    border: 2px solid rgba(8, 8, 8, 0.6);
     border-radius: 5px;
     display: flex;
     margin-right: 250px;
 }
 .music_img{
     width: 70px;
-    margin-left:0px;
+    border-radius: 3px 0 0 3px;
     padding: 0;
 }
 .music_text{
@@ -70,7 +70,7 @@ body{
 .music_totalProgress div{
     width: 0%;
     height: 100%;
-    background-color: rgb(0, 0, 255, 0.7);
+    background-color: rgb(0, 0, 255, 0.6);
 }
 .music_volume{
     width: 100px;
@@ -85,4 +85,128 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgb(136, 135, 135, 0.4);
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color:rgb(136, 135, 135, 0.7);
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 93.5%;
+    background-color: rgb(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+.browse{
+    margin: 40px 300px 0 300px ;
+}
+.browse_boxov{
+    width: 1310px;
+    height: 440px;
+    overflow-y: scroll;
+}
+.browse_boxov::-webkit-scrollbar{
+    width: 5px;
+}
+.browse_boxov::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(136, 135, 135, 0.6);
+}
+.browse_boxo{
+    padding-left: 5px;
+    margin-top: 10px;
+    display: flex;
+}
+.browse_box{
+    width: 256px;
+    cursor: pointer;
+    margin-right: 90px;
+}
+.browse_box h4{
+    margin-top: 10px;
+}
+.browse_box img{
+    width: 256px;
+    height: 160px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(136, 135, 135, 0);
+}
+.browse_box:hover h4{
+    color: rgb(5, 81, 167);
+}
+.browse_box:hover img{
+    opacity: 0.9;
+    border: 2px solid rgb(136, 135, 135, 0.7);
+}
+.classification{
+    margin: 40px 300px 0 300px ;
+}
+.classification_boxo{
+    height: 160px;
+    display: flex;
+    overflow-x: scroll;
+}
+.classification_box{
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+.classification_box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(136, 135, 135, 0);
+}
+.classification_box:hover{
+    color: rgb(5, 81, 167);
+}
+.classification_box:hover img{
+    opacity: 0.9;
+    border: 2px solid rgb(136, 135, 135, 0.7);
+}
+.classification_boxo::-webkit-scrollbar{
+    height: 8px;
+}
+.classification_boxo::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgb(136, 135, 135, 0.6);
+}
+.bottom{
+    position: absolute;
+    width: 100%;
+    top: 93.5%;
+    color: rgb(0, 0, 0, 0.6);
+    text-align: center;
+}
+.game{
+    position: absolute;
+    top: 2%;
+    left: 100%;
+    width: 1500px;
+    height: 800px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255, 0.9);
+    z-index: 999;
+    transition: 3s;
+}
+.game_go{
+    transform: translateX(-115%);
+}
+.game i {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: rgb(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+.game iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
 }

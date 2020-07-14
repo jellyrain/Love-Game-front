@@ -1,0 +1,148 @@
+body{
+    margin: 0;
+    position: 0;
+}
+.login{
+    width: 97%;
+    height: 100%;
+    position: relative;
+}
+.login video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -11;
+}
+h1{
+    text-align: center;
+    margin-top: 7%;
+    font-size: 50px;
+    color: rgb(0, 0, 0, 0.6);
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 10px;
+    user-select:none; 
+}
+.box{
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(255, 255, 255, 0.4);
+    border: 3px solid rgb(0, 0, 0, 0.7);
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+}
+.login_box{
+    margin: 100px 0 0 100px;
+}
+form{
+    margin: 50px;
+    font-size: 35px;
+    font-weight: 10px;
+    font-family: monospace;
+}
+.account{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.password{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.account input{
+    width: 500px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.password input{
+    width: 500px;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0, 0);
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+.login_login{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 15%;
+    left: 31%;
+    border: 2px solid rgb(77, 18, 18, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    text-align: center;
+}
+.login_login::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    top: 99%;
+    right: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_login::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    top: -5%;
+    left: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_login:hover::after{
+    transform: translateX(-500%);
+}
+.login_login:hover::before{
+    transform: translateX(500%);
+}
+.login_sign{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    bottom: 15%;
+    left: 55%;
+    border: 2px solid rgb(94, 31, 31,0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    padding-top: 5px;
+    text-align: center;
+}
+.login_sign::after{
+    content: "";
+    position: absolute;
+    width: 25px;
+    top: 99%;
+    right: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_sign::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    top: -5%;
+    left: 10%;
+    border: 1px solid rgb(255, 255, 255, 0.8);
+    transition: 1s;
+}
+.login_sign:hover::after{
+    transform: translateX(-500%);
+}
+.login_sign:hover::before{
+    transform: translateX(500%);
+}
